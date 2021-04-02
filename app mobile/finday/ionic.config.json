@@ -1,0 +1,7 @@
+{
+  "name": "finday",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

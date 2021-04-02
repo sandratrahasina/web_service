@@ -1,0 +1,17 @@
+<h1> Inserer un offre </h1> 
+<form>
+	<label> Nom </label> 
+	<input [(ngModel)] ="nom" placeholder="nom"  /> 
+	<label> Prix </label> 
+	<input [(ngModel)] ="prix" placeholder="prix"/>
+	<label> Duree </label>
+	<input [(ngModel)] ="duree" placeholder="duree"/>
+	<label> Unite </label>
+	<select [(ngModel)] ="unite">
+		<option value="m">  min </option>	
+		<option value="j">  heure </option>
+		<option value="j">  jour </option>
+		<option value="m">  mois </option>	
+	</select>
+	<button> Ajouter </button>
+</form>

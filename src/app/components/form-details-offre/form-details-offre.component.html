@@ -1,0 +1,30 @@
+<h1> Details offre </h1>
+<form>
+	<label> Type </label>
+	<select [(ngModel)] ="type">
+		<option value="sms">  sms </option>	
+		<option value="internet">  internet </option>
+		<option value="appel">  appel </option>	
+	</select>
+	<label> Valeur </label>
+	<input [(ngModel)] ="valeur" placeholder="valeur">
+	<label> Unite </label>
+	<input [(ngModel)] ="uniteV" placeholder="unite">
+	<button >+</button>
+</form>
+<table>
+	<thead>
+		<tr>
+			<th> Type </th>
+			<th> Valeur </th>
+			<th> Unite </th>
+		</tr>
+	</thead>
+	<tbody> 
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>

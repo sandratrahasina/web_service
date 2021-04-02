@@ -1,0 +1,6 @@
+<div class="container">
+<div class="item header"><app-header (ChooseMenuHeadEvent) = "SetMenu($event)"> </app-header> </div>
+<div class="item nav"> <app-nav [menuNav]  = "menu"> </app-nav></div>
+<div class="item content"><router-outlet> </router-outlet> </div>
+<!-- <div class="item footer"> <app-footer> </app-footer></div> -->
+</div>

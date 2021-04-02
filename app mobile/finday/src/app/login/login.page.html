@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+    <form #f="ngForm"(ngSubmit) ="login()">
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">your number :</ion-label>
+              <ion-input type="text" [(ngModel)]="user.number" name="number"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">your password :</ion-label>
+              <ion-input type="text" [(ngModel)]="user.mdp" name="mdp"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <button ion-button (click)="login()" block>Log In</button>
+
+        <button ion-button [routerLink]="['/sign-in']" >Sign In</button>
+
+    </form>
+
+  </div>
+
+
+
+
+
+</ion-content>

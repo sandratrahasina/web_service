@@ -1,0 +1,16 @@
+table {
+    width: 1000px ;
+    border-collapse: collapse ;
+}
+thead tr {
+    background-color: #585858;
+    color: #ffffff ; 
+}
+th, td {
+    border: 1px solid #bbbbbb;    
+    padding: 5px ;
+}
+
+#content{
+	 grid-area: main; 
+}

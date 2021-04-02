@@ -1,0 +1,23 @@
+<div id="content">
+<h1> Liste des offres </h1>
+<table >
+	<thead>
+	<tr>
+		<th>Nom</th>
+		<th>Prix <br> (ar)</th>
+		<th>Duree</th>
+		<th>Unite</th>
+		<th>Priorite</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor ="let offre of listOffre">
+			<td>{{ offre. nom}}</td>
+			<td>{{ offre.prix }}</td>
+			<td>{{ offre.duree }}</td>
+			<td>{{ offre.unite }}</td>
+			<td>{{ offre.priorite }}</td>
+		</tr>
+	</tbody>
+</table>
+</div>

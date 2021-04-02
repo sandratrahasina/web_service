@@ -1,0 +1,28 @@
+input, select {
+ padding:3px;
+ /*border:1px solid #F5C5C5;*/
+ border:1px solid  0;
+ border-radius:5px;
+ width:200px;
+ /*box-shadow:1px 1px 2px #C0C0C0 inset;*/
+ box-shadow:1px 1px 2px 0 inset;
+ }
+ button {
+ width:100px;
+ margin-left:5px;
+/* box-shadow:1px 1px 1px #D83F3D;*/
+/*box-shadow:1px 1px 1px  0;*/
+border-radius:5px;
+cursor:pointer;
+color : #fff;
+background-color: #186dde;
+ }
+ 
+form {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 50px;
+}
+.toCenter{
+	text-align : center;
+}

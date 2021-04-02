@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="container">
+     <ion-row>
+       <ion-col size="12">
+          <ion-label>Montant</ion-label>
+          <input type="text" name="contact">
+       </ion-col>
+     </ion-row>
+
+    <ion-row  [hidden]="action != 'Transfert' ">
+      <ion-col size="12">
+        <ion-label>Numero</ion-label>
+        <input type="text" name="numero">
+      </ion-col>
+    </ion-row>
+    
+     <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label>Date</ion-label>
+          <ion-datetime display-format="DD.MM.YYYY HH:mm"></ion-datetime>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <button class="button-primary">Valider</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

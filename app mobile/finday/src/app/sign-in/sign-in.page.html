@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signIn</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+
+    <form #f="ngForm"(ngSubmit) ="logForm(f)">
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">your name :</ion-label>
+              <ion-input type="text" [(ngModel)]="newAccount.name" name="name"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">your number :</ion-label>
+              <ion-input type="text" [(ngModel)]="newAccount.number" name="number"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">your password :</ion-label>
+              <ion-input type="text" [(ngModel)]="newAccount.mdp" name="mdp"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">your initial sold :</ion-label>
+              <ion-input type="number" [(ngModel)]="newAccount.solde" name="solde"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">Date of the sign in :</ion-label>
+              <ion-datetime [(ngModel)]="newAccount.date_inscription" name="date_inscription" display-format="DD.MM.YYYY HH:mm"></ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <button ion-button type="submit" block>Sign In</button>
+
+    </form>
+
+  </div>
+
+
+</ion-content>

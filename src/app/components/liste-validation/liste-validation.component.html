@@ -1,0 +1,19 @@
+<h1> Liste des depots non valides </h1>
+<table border=1>
+	<thead>
+	<tr>
+		<th>Utilisateur</th>
+		<th>Num</th>
+		<th>Somme <br> (ar)</th>
+		<th></th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor = "let valid of listValidation">
+			<td>{{valid.utilisateur}}</td>
+			<td>{{valid.num}}</td>
+			<td>{{valid.somme}}</td>
+			<button> Valider </button>
+		</tr>
+	</tbody>
+</table>

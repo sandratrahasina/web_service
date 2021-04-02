@@ -1,0 +1,31 @@
+.container{
+  align-items: center;
+  padding: 1.5em;
+  ion-row{
+      width: 100%;
+      height: auto;
+      align-items: center;
+      margin: 15px auto;
+  }
+  ion-col{
+      text-align: center;
+      input,select{
+          width: 100%;
+          margin: 0px auto;
+          height: 2.5em;
+          border: 0px solid;
+          background-color: transparent;
+          border-color: darkgray;
+          border-radius: 0;
+          border-bottom: 1px solid !important;
+
+      }
+      ion-label{
+          font-size: 15px;
+          margin: 3px;
+          font-weight: bold;
+          color: darkgray;
+      }
+  }
+
+}

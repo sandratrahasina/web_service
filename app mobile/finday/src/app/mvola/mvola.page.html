@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>mvola</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list side="top">
+      <ion-button color="tertiary"  *ngFor="let page of menu" (click)="showModal(page['label'])">
+        <ion-icon name="{{page['icon']}}"></ion-icon>
+        <ion-label>{{page['label']}}</ion-label>
+      <hr>
+    </ion-button>
+    </ion-list>
+
+</ion-content>
+

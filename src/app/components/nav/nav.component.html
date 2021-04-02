@@ -1,0 +1,5 @@
+<div id = "nav" >
+	<ul *ngFor = "let sousmenu of menuNavList">
+		<li> <a [routerLink] = "sousmenu.route">  {{ sousmenu.name }}  </a> </li>
+	</ul>
+</div>
